@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+.mh-card {
+	width: calc( max-width - 60%);
+    background: #fff;
+    margin: 0 auto;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 60%);
+    border-radius: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mh-card__header {
+    background: #009900;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0px 0px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mh-card__header h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.mh-card__content {
+    padding: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.mh-card__content h2 {
+    margin: 0 0 20px 0;
+    font-size: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mh-card__actions,
+.mh-card__custom-action {
+	margin-bottom: 20px;
+	display: flex;
+    gap: 10px;
+}
+.mh-card__content button {
+	background: #009900;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 20px;
+	cursor: pointer;
+}
+.mh-card__content input {
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 20px;
 }
